@@ -1007,24 +1007,36 @@ Courses Style
   position: relative;
   border-radius: 25px;
   overflow: hidden;
+  box-shadow: 0px -11px 4px 4px #f1f0fe
 }
 
 .events_item .thumb img {
   margin-bottom: -5px;
 }
 
-.events_item .thumb span.category {
+.events_item .thumb .main-button {
   position: absolute;
   left: 30px;
   top: 30px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #7a6ad8;
-  background-color: rgba(250, 250, 250, 0.95);
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-weight: 500;
-  display: inline-block;
+
+}
+.events_item .thumb .main-button .phone {
+  width: 30px;
+  padding-left: 6%;
+  background-image: url('../images/icons/phone-black.svg');
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 5px;
+    height: 30px;
+    top: 5px;
+}
+.events_item .thumb .main-button:hover .phone{
+  background-image: url('../images/icons/phone-white.svg');
+}
+.events_item .thumb .main-button a{
+  padding: 0 35px 0 25px;
 }
 
 .events_item .thumb span.price h6 {
