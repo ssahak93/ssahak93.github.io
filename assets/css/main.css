@@ -1,4 +1,8 @@
 .work-image {height: 315px;}
-.f17-i-curs{font-size: 17px;
+.f17-i-curs{
     font-style: italic;
-    font-family: cursive;}
+    font-size: 17px;
+}
+body{
+    font-family: brutal,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
