@@ -693,6 +693,7 @@ Banner Style
   border-radius: 25px;
   padding: 100px 100px;
   margin-left: 130px;
+  min-height: 70vh;
 }
 
 .main-banner .item span.category {
