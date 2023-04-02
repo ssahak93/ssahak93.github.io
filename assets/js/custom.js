@@ -6,6 +6,7 @@
 	$(window).on('load', function() {
 
         $('#js-preloader').addClass('loaded');
+		document.getElementById("current-year").innerHTML = new Date().getFullYear()
 
     });
 
@@ -132,13 +133,14 @@
 	        })
 	        $(this).addClass('active');
 	      
-	        var target = this.hash,
-	        menu = target;
+	        var targetHref = this.hash,
+	        	menu = targetHref;
+
 	       	var target = $(this.hash);
 	        $('html, body').stop().animate({
-	            scrollTop: (target.offset().top) - 79
+	            scrollTop: (target.offset().top) - 80
 	        }, 500, 'swing', function () {
-	            window.location.hash = target;
+	            window.location.hash = targetHref;
 	            $(document).on("scroll", onScroll);
 	        });
 	    });
